@@ -1,0 +1,26 @@
+{
+  "name": "sims-play-with-protractor",
+  "version": "1.0.0",
+  "description": "Behaviour testing demo for Agile Sims project, to show an example of working with Protractor and Cucumber",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AgileSim/SimsPlayWithProtractor.git"
+  },
+  "keywords": [
+    "BDD",
+    "Sims",
+    "testing",
+    "cucumber",
+    "protractor"
+  ],
+  "author": "Miguel A. Alonso <migalons74@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AgileSim/SimsPlayWithProtractor/issues"
+  },
+  "homepage": "https://github.com/AgileSim/SimsPlayWithProtractor#readme"
+}
