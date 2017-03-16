@@ -22,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/AgileSim/SimsPlayWithProtractor/issues"
   },
-  "homepage": "https://github.com/AgileSim/SimsPlayWithProtractor#readme"
+  "homepage": "https://github.com/AgileSim/SimsPlayWithProtractor#readme",
+  "devDependencies": {
+    "protractor-cucumber-framework": "^1.0.1",
+    "cucumber": "^2.0.0-rc.8",
+    "log4js": "^1.1.1",
+    "selenium-webdriver": "^3.3.0",
+    "sims": "https://github.com/AgileSim/Sims.git"
+  },
+  "dependencies": {
+
+  }
 }
