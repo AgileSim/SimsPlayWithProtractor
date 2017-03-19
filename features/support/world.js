@@ -4,6 +4,7 @@ const cucumber = require('cucumber');
 const log4js = require('log4js');
 const Path = require('path');
 const simsLoader = require('./sims');
+const chai = require('chai');
 
 let world = {
 
@@ -16,6 +17,7 @@ let world = {
     log.debug("Loading Sims...");
     world.sims = simsLoader.load(Path.resolve(__dirname + '/../../node_modules/sims'));
     log.debug("--------------  world.js ------------------");
+    global.assert = chai.assert;
   }
 
 };

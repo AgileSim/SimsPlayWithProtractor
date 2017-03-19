@@ -11,6 +11,7 @@ defineSupportCode(function({After, Before}) {
     browser.get("index.html");
     //reset sims selection to all (Delete all filters)
     db.selection = world.sims;
+    db.user = db.selection[0];
   });
 
   After(function () {

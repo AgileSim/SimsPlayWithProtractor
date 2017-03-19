@@ -6,7 +6,7 @@ exports.config = {
     getPageTimeout: 60000,
     allScriptsTimeout: 500000,
     framework: 'custom',
-    // path relative to the current config file
+    // path relative to then current config file
     frameworkPath: require.resolve('protractor-cucumber-framework'),
     capabilities: {
         'browserName': 'chrome'

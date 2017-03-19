@@ -24,13 +24,12 @@
   },
   "homepage": "https://github.com/AgileSim/SimsPlayWithProtractor#readme",
   "devDependencies": {
-    "protractor-cucumber-framework": "^1.0.1",
+    "chai": "^3.5.0",
     "cucumber": "^2.0.0-rc.8",
     "log4js": "^1.1.1",
+    "protractor-cucumber-framework": "^1.0.1",
     "selenium-webdriver": "^3.3.0",
     "sims": "https://github.com/AgileSim/Sims.git"
   },
-  "dependencies": {
-
-  }
+  "dependencies": {}
 }
