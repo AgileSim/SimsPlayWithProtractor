@@ -3,17 +3,15 @@ Behaviour testing demo for Agile Sims project, to show an example of working wit
 
 ## Protractor installation and selenium webdriver configuration
 
-> npm install -g protractor
+> npm install
 
-> webdriver-manaver update
-
-
+Npm install will install all dependencies for selenium and protractor. After
 
 ## Usage
 
-> protractor config/base.js  --baseUrl=\<web aplication URL\>
+> npm test -- --baseUrl=\<web aplication URL\>
 
 Example: 
 
-> protractor config/base.js  --baseUrl=http://localhost:4200
+> npm test -- --baseUrl=http://localhost:4200
 

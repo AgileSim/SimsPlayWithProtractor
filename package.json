@@ -4,7 +4,8 @@
   "description": "Behaviour testing demo for Agile Sims project, to show an example of working with Protractor and Cucumber",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "postinstall": "node_modules/protractor/bin/webdriver-manager update",
+    "test": "node_modules/protractor/bin/protractor config/base"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "chai": "^3.5.0",
     "cucumber": "^2.0.0-rc.8",
     "log4js": "^1.1.1",
+    "protractor": "^5.1.1",
     "protractor-cucumber-framework": "^1.0.1",
     "selenium-webdriver": "^3.3.0",
     "sims": "https://github.com/AgileSim/Sims.git"
