@@ -23,8 +23,7 @@ exports.config = {
     cucumberOpts: {
         require: ['../features/step_definitions', '../features/support'],
         tags: false,
-        format: 'pretty',
+        format: ['json:reports/cucumber.json'],
         profile: false,
-        'no-source': true
     }
 };
