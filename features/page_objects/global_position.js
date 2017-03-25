@@ -6,7 +6,7 @@ const poLogin = require('./login');
 
 let view = {
   css: {
-    title: '.qa-header-container',
+    title: '.bktx-header-container',
     products:{
     }
   }
