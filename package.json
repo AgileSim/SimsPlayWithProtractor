@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node_modules/protractor/bin/webdriver-manager update",
-    "test": "node_modules/protractor/bin/protractor config/base"
+    "pretest": "node_modules/xray-connector-js/index.js download-test http://35.156.130.109:8080/ --filter=10001 --username=bot-sim --password=sim-bot --target=features",
+    "test": "node_modules/protractor/bin/protractor config/base",
+    "posttest": "node_modules/xray-connector-js/index.js upload-result http://35.156.130.109:8080 reports/cucumber.json --username=bot-sim --password=sim-bot"
   },
   "repository": {
     "type": "git",
@@ -31,7 +33,8 @@
     "protractor": "^5.1.1",
     "protractor-cucumber-framework": "^1.0.1",
     "selenium-webdriver": "^3.3.0",
-    "sims": "https://github.com/AgileSim/Sims.git"
+    "sims": "https://github.com/AgileSim/Sims.git",
+    "xRayConnectorJs": "https://github.com/AgileSim/xRayConnectorJS.git"
   },
   "dependencies": {}
 }
