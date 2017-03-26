@@ -5,7 +5,7 @@ const poGlobalPosition = require('./global_position');
 
 let view = {
   css: {
-    title: '.qa-header-container',
+    title: '.bktx-header-container',
     input: {
       username: ".login-user",
       password: ".login-password"
