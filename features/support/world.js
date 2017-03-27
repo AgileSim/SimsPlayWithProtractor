@@ -7,7 +7,6 @@ const simsLoader = require('./sims');
 const chai = require('chai');
 
 let world = {
-
   sims: [],
 
   constructor: function({atach, parameters}) {
@@ -19,15 +18,10 @@ let world = {
     log.debug("--------------  world.js ------------------");
     global.assert = chai.assert;
   }
-
 };
 
-
-
 cucumber.defineSupportCode(function ({setWorldConstructor}) {
-
   setWorldConstructor(world.constructor);
-
 });
 
 module.exports = world;

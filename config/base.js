@@ -12,13 +12,12 @@ exports.config = {
         'browserName': 'chrome'
     },
 
-
     // Spec patterns are relative to this directory.
     specs: [
         '../features/'
     ],
 
-    baseURL: 'http://localhost:4200/',
+    baseUrl: 'http://localhost:4200/',
 
     cucumberOpts: {
         require: ['../features/step_definitions', '../features/support'],
