@@ -22,9 +22,13 @@ Example:
 - The same that [SimsApp project](https://github.com/AgileSim/SimsApp/blob/master/cordova/README.md)
 - Execute: ```sudo ./node_modules/.bin/authorize-ios```
 
+Check prerequisites executing:
+
+> ./node_modules/.bin/appium-doctor
+
 ### Usage
 
-1. Run the appium server:
+1. Run the appium server (Note: this steps it's not already necessary because of appium's server is started with the run-tests.sh script)
 
 > ./node_modules/.bin/appium
 
@@ -38,14 +42,14 @@ Note: sometimes, if the version of chrome is lower in the device (chrome o webvi
 
 ```bash
 # Run tests over safari browser into iOS device
-npm run test-web-ios
+npm test -- web-ios
 
 # Run tests over chrome browser into Android device
-npm run test-web-android
+npm test -- web-android
 
 # Run tests over app into iOS device
-npm run test-app-ios
+npm test -- app-ios
 
 # Run tests over app into Android device
-npm run test-app-android
+npm test -- app-android
 ```

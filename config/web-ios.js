@@ -8,7 +8,7 @@ exports.config = Object.assign(BaseAppium, {
         browserName: 'safari',
         platformName: 'iOS',
         platformVersion: '10.2',
-        deviceName: 'iPhone 6',
+        deviceName: 'iPhone 7',
         fullReset: false,
     },
 

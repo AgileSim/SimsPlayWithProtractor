@@ -5,13 +5,10 @@
   "main": "index.js",
   "scripts": {
     "postinstall": "node_modules/protractor/bin/webdriver-manager update",
-    "pretest": "node_modules/xray-connector-js/index.js download-test http://35.156.130.109:8080/ --filter=10001 --username=bot-sim --password=sim-bot --target=features",
-    "test": "node_modules/protractor/bin/protractor config/base",
-    "test-web-ios": "node_modules/protractor/bin/protractor config/web-ios",
-    "test-web-android": "node_modules/protractor/bin/protractor config/web-android",
-    "test-app-ios": "node_modules/protractor/bin/protractor config/app-ios",
-    "test-app-android": "node_modules/protractor/bin/protractor config/app-android",
-    "posttest": "node_modules/xray-connector-js/index.js upload-result http://35.156.130.109:8080 reports/cucumber.json --username=bot-sim --password=sim-bot"
+    "pretest": "node_modules/xrayConnectorJs/index.js download-test http://35.156.130.109:8080/ --filter=10001 --username=bot-sim --password=sim-bot --target=features",
+    "test": "./run-tests.sh",
+    "posttest": "node_modules/xrayConnectorJs/index.js upload-result http://35.156.130.109:8080 reports/cucumber.json --username=bot-sim --password=sim-bot",
+    "prueba": "./run-tests.sh"
   },
   "repository": {
     "type": "git",
