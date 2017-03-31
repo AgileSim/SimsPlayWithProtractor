@@ -28,7 +28,7 @@ Check prerequisites executing:
 
 ### Usage
 
-1. Run the appium server (Note: this steps it's not already necessary because of appium's server is started with the run-tests.sh script)
+1. Run the appium server (**Warnig**: this steps it's not already necessary because of appium's server is started with the run-tests.sh script when run ```npm test -- [option]```)
 
 > ./node_modules/.bin/appium
 
