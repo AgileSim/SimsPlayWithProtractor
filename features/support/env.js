@@ -1,7 +1,7 @@
 'use strict';
 
-var configure = function () {
-    this.setDefaultTimeout(30 * 1000);
-};
+const cucumber = require('cucumber');
 
-module.exports = configure;
+cucumber.defineSupportCode(function({setDefaultTimeout}) {
+  setDefaultTimeout(60 * 1000);
+});
