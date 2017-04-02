@@ -28,8 +28,9 @@ let strings = {
 let self = {
 
   go: function() {
+    log.debug(" Init --->> page_objects/login.go() <<---");
     return self.assert.visible.title()
-      .then(()=>{gps.setCurrent(this);});
+      .then(()=>{ gps.setCurrent(self);});
   },
 
   assert: {
@@ -37,7 +38,8 @@ let self = {
       title: function() {
         return browser.element(by.css(view.css.title)).isDisplayed()
           .getText().then((text) => {
-            assert(text === strings.title, "Error. Expenting title: <" + strings.title + ">. But found: <" + text + ">.");
+            console.log("Expecting title: <" + strings.title + ">. Found title: <" + text + ">.");
+            return assert(text === strings.title, "Error. Login page. Expenting title: <" + strings.title + ">. But found: <" + text + ">.");
           })
       },
       label: {

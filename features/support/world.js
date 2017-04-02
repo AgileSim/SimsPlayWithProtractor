@@ -17,6 +17,7 @@ let world = {
     world.sims = simsLoader.load(Path.resolve(__dirname + '/../../node_modules/sims'));
     log.debug("--------------  world.js ------------------");
     global.assert = chai.assert;
+
   }
 };
 
