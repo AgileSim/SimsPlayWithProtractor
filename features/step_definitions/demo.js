@@ -6,7 +6,7 @@ let poGlobalPosition = require('../page_objects/global_position');
 let poLogin = require('../page_objects/login');
 
 defineSupportCode(function({Given, When, Then}) {
-  
+
   // Given('a user with current accounts', function () {
   //   db.filter((user) => (user.products && user.products.accounts && user.products.accounts.length > 0));
   //   log.debug("Selected user: " + db.user.credentials.username + ": " + db.user.email);

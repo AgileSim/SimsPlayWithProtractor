@@ -7,4 +7,6 @@ if [ "$1" != "" ]; then
     sleep 5 && node_modules/protractor/bin/protractor config/$1
 else
     node_modules/protractor/bin/protractor config/base
+
+    ./node_modules/xray-connector-js/index.js upload-result http://35.156.130.109:8080 reports/cucumber.json --username=bot-sim --password=sim-bot
 fi
